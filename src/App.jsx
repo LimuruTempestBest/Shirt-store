@@ -30,6 +30,16 @@ function App() {
               <div className="ml-2 text-blue-600 text-sm md:text-base">review (302)
               </div>
             </div>
+            <div className= "font-medium text-sm md:text-base mt-1 md:mt-3">
+              Colour
+            </div>
+            
+            <div>
+            <button type="button" class="rounded font-normal mt-2 md:mt-6 bg-slate-500 w-16 text-white  hover:bg-stone-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
+            White</button>
+            <button type="button" class="rounded font-normal mt-2 md:mt-6 bg-slate-500 w-16 ml-1 md:ml-2 text-white  hover:bg-stone-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
+            black</button>
+            </div>
             <div className="font-medium mt-2 md:mt-5 text-sm md:text-base">
               Size
             </div>
