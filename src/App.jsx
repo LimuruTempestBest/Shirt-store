@@ -11,10 +11,10 @@ function App() {
       <div className="rounded-r-lg bg-white p-5 md:p-10 ">
         <div className="flex">
           <div className="rounded-xl overflow-hidden ">
-            <img src={shirt} className='w-24 md:w-96 ' />
+            <img src={shirt} className='w-60 md:w-96 ' />
           </div>
           <div className='p-2 md:p-5'>
-            <div className="text-neutral-800 text-base md:text-xl font-semibold font-['Ubuntu']">white-T-Shirt
+            <div className="text-neutral-800 text-base md:text-xl font-semibold font-['Ubuntu']">black & white-T-Shirt
             </div>
             <div className="font-semibold text-base md:text-xl mt-4 tracking:wider"> $56
             </div>
@@ -30,46 +30,62 @@ function App() {
               <div className="ml-2 text-blue-600 text-sm md:text-base">review (302)
               </div>
             </div>
-            <div className= "font-medium text-sm md:text-base mt-1 md:mt-3">
+            <div className="font-medium text-sm md:text-base mt-1 md:mt-3 font-['Ubuntu']">
               Colour
             </div>
-            
-            <div>
-            <button type="button" class="rounded font-normal mt-2 md:mt-6 bg-slate-500 w-16 text-white  hover:bg-stone-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-            White</button>
-            <button type="button" class="rounded font-normal mt-2 md:mt-6 bg-slate-500 w-16 ml-1 md:ml-2 text-white  hover:bg-stone-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-            black</button>
+            <div class="inline-flex rounded-md shadow-sm mt-1 md:mt-2" role="group">
+              <button type="button" className="font-['Abel'] w-12 md:w-20 h-8 text-sm font-medium text-gray-900 bg-transparent rounded-l-lg border border-gray-900 
+              hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                White
+              </button>
+              <button type="button" className="font-['Abel'] w-12 md:w-20 h-8 text-sm font-medium text-gray-900 bg-transparent rounded-r-lg  border border-gray-900
+              hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                Black
+              </button>
             </div>
-            <div className="font-medium mt-2 md:mt-5 text-sm md:text-base">
+            <div className="font-medium mt-2 md:mt-5 text-sm md:text-base font-['Ubuntu']" role="button">
               Size
             </div>
-            <button type="button" class="rounded font-normal mt-6 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              XXS</button>
-            <button className="rounded font-normal mt-0.5 md:mt-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              XS
+            <div class="inline-flex rounded-md shadow-sm mt-1 md:mt-2" role="group">
+
+              <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent rounded-l-lg border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                XXXS
+              </button>
+              <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                XS
+              </button>
+              <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-l border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                S
+              </button>
+              <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent rounded-r-md border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                M
+              </button>
+            </div>
+
+            <div>
+              <div class="inline-flex rounded-md shadow-sm mt-2" role="group">
+                <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent rounded-l-lg border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                  L
+                </button>
+                <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                  XL
+                </button>
+                <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent border-l border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                  XXL
+                </button>
+                <button type="button" class="font-['Abel'] w-11 md:w-12 h-8 md:h-10 text-sm font-medium text-gray-900 bg-transparent rounded-r-md border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                  XXXL
+                </button>
+              </div>
+            </div>
+            
+            <button className="font-['Ubuntu'] rounded font-semibold  text-white bg-blue-600 w-24 h-8 md:w-40 h-11 mt-10 hover:animate-bounce hover:bg-sky-900">
+              Add to bag 
             </button>
-            <button className="rounded font-normal mt-0.5 md:mt-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              S
-            </button>
-            <button className="rounded font-normal mt-0.5 md:mt-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              M
-            </button><br></br>
-            <button className="rounded font-normal mt-0.5 md:mt-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              L
-            </button>
-            <button className="rounded font-normal mt-0.5 md:mt-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              XL
-            </button>
-            <button className="rounded font-normal mt-0.5 md:-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              XXL
-            </button>
-            <button className="rounded font-normal mt-0.5 md:-1 bg-cyan-400 w-10 text-white ml-1 md:ml-2 hover:bg-blue-600 focus:ring-2 focus:outline-none focus:ring-blue-600 dark:focus:ring-blue-800 ">
-              XXXL
-            </button><br></br>
-            <button className="rounded font-semibold  text-white bg-blue-600 w-24 h-8 md:w-40 h-11 mt-10 hover:animate-bounce hover:bg-sky-900">
-              Add to bag
-            </button>
+            
+
           </div>
+
           <div className='flex flex-rows'>
             {Array(1)
               .fill(0)
@@ -82,6 +98,9 @@ function App() {
         </div>
       </div>
     </div>
+
+
+
 
   )
 }
