@@ -8,12 +8,12 @@ function App() {
 
     <div className="bg-sky-100  flex justify-center items-center w-full h-screen" >
 
-      <div className="rounded-r-lg bg-white p-5 md:p-10 ">
-        <div className="flex">
-          <div className="rounded-xl overflow-hidden ">
-            <img src={shirt} className='w-60 md:w-96 ' />
+      <div className="rounded-md bg-white p-5 md:p-10">
+        <div className="md:flex">
+          <div className="rounded-md overflow-hidden ">
+            <img src={shirt} className="mr-10 mt-14 h-56 md:w-80 h-auto " />
           </div>
-          <div className='p-2 md:p-5'>
+          <div className="p-2 md:p-5">
             <div className="text-neutral-800 text-base md:text-xl font-semibold font-['Ubuntu']">black & white-T-Shirt
             </div>
             <div className="font-semibold text-base md:text-xl mt-4 tracking:wider"> $56
@@ -34,11 +34,11 @@ function App() {
               Colour
             </div>
 
-            <div className="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
+            <div className="border-indigo-600 flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
               <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" className="accent-orange-300 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label for="bordered-radio-1" className="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300 font-['Abel']" >White</label>
             </div>
-            <div className="flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
+            <div className="border-indigo-600 flex items-center pl-4 rounded border border-gray-200 dark:border-gray-700">
               <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" className="accent-orange-300 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
               <label for="bordered-radio-1" className="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300 font-['Abel']">Black</label>
             </div>
@@ -80,21 +80,9 @@ function App() {
               </div>
             </div>
 
-            <button className="font-['Ubuntu'] rounded font-semibold  text-white bg-blue-600 w-24 h-8 md:w-40 h-11 mt-10 hover:animate-bounce hover:bg-sky-900">
+            <button className="font-['Ubuntu'] rounded font-semibold  text-white bg-blue-600 w-24 h-8 md:w-40 h-11 mt-5 hover:animate-bounce hover:bg-sky-900">
               Add to bag
             </button>
-
-
-          </div>
-
-          <div className='flex flex-rows'>
-            {Array(1)
-              .fill(0)
-              .map(() => (
-                <div>
-                  <Icon icon="iconoir:cancel" className="text-red-500 hover:animate-bounce " />
-                </div>
-              ))}
           </div>
         </div>
       </div>
